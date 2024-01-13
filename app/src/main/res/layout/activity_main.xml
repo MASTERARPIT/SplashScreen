@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#BFF6A1">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="127dp"
+        android:gravity="center"
+        android:text="WELCOME"
+        android:textSize="34dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="556dp"
+        android:layout_below="@+id/text" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="134dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/recycle"
+        android:text="HOME"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#C52525"
+        android:drawableLeft="@drawable/home"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="134dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/recycle"
+        android:backgroundTint="#C52525"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@+id/button"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="134dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/recycle"
+        android:layout_alignParentEnd="true"
+
+        android:layout_toEndOf="@+id/button2"
+        android:text="PROFILE"
+        android:drawableLeft="@drawable/person"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#C52525"/>
+
+</RelativeLayout>
